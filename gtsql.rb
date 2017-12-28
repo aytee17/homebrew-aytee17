@@ -6,8 +6,8 @@ class Gtsql < Formula
   sha256 "4fd6e57ce509c09cddd534d751c281a461bbc10871371205d07a65e3ea921d83"
 
   def install
-  	inreplace "brew/gtsql", "##PREFIX##", "#{prefix}"
+  	inreplace "gtfs-to-sqlite-0.0.1/brew/gtsql", "##PREFIX##", "#{prefix}"
   	prefix.install "gtfs-to-sqlite-0.0.1-all.jar"
-  	bin.install "brew/gtsql"
+  	bin.install "gtfs-to-sqlite-0.0.1/brew/gtsql"
   end
 end
